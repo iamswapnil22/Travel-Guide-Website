@@ -25,6 +25,10 @@ nav{
 
 nav .logo{
     width: 25%; text-align: center;
+    display: flex;
+    align-content: flex-start;
+    padding-top: -10px;
+    font-size: 28px;
 }
 
 nav .menu{
@@ -46,16 +50,25 @@ main{
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 40px;
-    font-weight: 50;
+    font-size: 65px;
+    font-weight: 40;
     align-items: center;
     text-align: center;
     
     font-family: 'Cormorant', serif;
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
     font-family: 'Old Standard TT', serif;
 }
 
+section h2{
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 2px;
+}
+
+section i{
+    font-style: italic;
+}
 
 
