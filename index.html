@@ -13,6 +13,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@300&family=Josefin+Sans&family=Nanum+Myeongjo&family=Old+Standard+TT:ital@0;1&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#heading-text").hide()
+
+                $("#signup-form").submit(function(){
+                    $("#heading-text").show()
+                    $("#floating-window").css({"padding":"0px"})
+                    $(".floating-window").hide()
+                    $("#signup-form").hide()
+                    return false
+                })
+
+            })
+        </script>
     </head>
     <body>
         <header>
@@ -35,7 +53,7 @@
 
             <main>
                 <section>
-                    <p>Unforgettable travel<br>experiences with<br> a <i>positive</i> impact</p>
+                    <p id="heading-text">Unforgettable travel<br>experiences with<br> a <i>positive</i> impact</p>
                     <span>
 
                     </span>
@@ -46,14 +64,14 @@
 
         <div class="floating-window">
             <div class="form-container">
-              <form>
+              <form id="signup-form">
                 <img src="Logo_Temp.png" width="45px" height="45px">
                 <h2>Lightwaves Travels</h2>
                 <h3>Login</h3><br>
                 <input type="text" placeholder="Username">
                 <input type="password" placeholder="Password">
                 <a href="/register.html">Sign up?</a><br>
-                <button type="submit">Sign in</button>
+                <button type="submit" id="signup">Sign in</button>
               </form>
             </div>
           </div>
