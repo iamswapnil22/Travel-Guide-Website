@@ -123,4 +123,27 @@ section i{
     text-decoration: none;
   }
   
+  .card-container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    padding-top: 6rem; 
+    
+  }
   
+  .card-layout{
+    width: 100%; height: 100vh;
+    background-image: url('travelwebsite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    padding: 5px;
+    background-color: #383838;
+  }
