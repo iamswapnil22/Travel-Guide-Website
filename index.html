@@ -19,12 +19,18 @@
         <script>
 
             $(document).ready(function(){
-                $("#heading-text").hide()
+              $('html, body').css({
+                  overflow: 'hidden',
+                  height: '100%'
+              });
+            $("#heading-text").hide()
 
                 $("#signup-form").submit(function(){
                     $("#heading-text").show()
                     $("#floating-window").css({"padding":"0px"})
                     $(".floating-window").hide()
+                    $('html, body').css({ overflow: 'auto' });
+                                        
                     $("#signup-form").hide()
                     return false
                 })
@@ -44,7 +50,7 @@
 
                 <div class="menu">
                     <a href="#">Home</a>
-                    <a href="#">Explore</a>
+                    <a href="#card-layout">Explore</a>
                     <a href="#">About</a>
                     <a href="#">Service</a>
                     <a href="#">Contact</a>
@@ -80,28 +86,68 @@
           <div class="card-container">
             
             <div class="card">
-              <img src="taj.jpg" alt="Card Image" width="500px" height="300px" >
+              <img src="taj.jpg" alt="Card Image" width="472px" height="300px" >
               <center><h1 style="color: white; margin-bottom: 10px;">Taj Mahal</h1></center>
               <p class="cardtxt" style="color: white; font-size: 18px" align="justify" >The Taj Mahal is an ivory-white marble mausoleum 
                 on the southern bank of the river Yamuna in the Indian city of Agra.
                 It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his 
                 favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
-              <center><a href="#join-form"><button style="margin: 8px;" class="button">Book Now</button></a></center>
+              <center><a href="#join-form"><button  class="button">Book Now</button></a></center>
 
             </div>
             
             <div class="card">
-              <img src="kerla.jpg" alt="Card Image" width="550px" height="300px" >
-              <p class="cardheading">Kerla</p>
-              <p class="cardtxt">Our gym equipment are high-quality, and advanced fitness equipment used by fitness professionals and enthusiasts. This includes cardio machines such as treadmills and exercise bikes, strength training equipment like weight machines and dumbbells, as well as specialized equipment for functional training, powerlifting and more.</p>
-              <a href="#join-form"><button class="gym-button" style="margin-left: 7.5rem; margin-bottom: 1rem;">JOIN NOW →</button></a>
+              <img src="kerla.jpg" alt="Card Image" width="472px" height="300px" >
+              <center><h1 style="color: white; margin-bottom: 10px;">Kerla</h1></center>
+              <p class="cardtxt" style="color: white; font-size: 18px" align="justify" >Kerala, southwestern coastal state of India. It is a small state,
+                 constituting only about 1 percent of the total area of the country. Kerala stretches
+                  for about 360 miles (580 km) along the Malabar Coast, varying in width 
+                  from roughly 20 to 75 miles (30 to 120 km)</p>
+              <center><a href="#join-form"><button  class="button">Book Now</button></a></center>  
             </div>
             
             <div class="card">
-              <img src="kashmir.jpg" alt="Card Image" width="550px" height="300px" >
-              <p class="cardheading">Kashmir</p>
-              <p class="cardtxt">Our gym equipment refers to the high-qualfitness equipment used by fitness professionals and enthusiasts. This includes cardio machines such as treadmills and exercise bikes, strength training equipment like weight machines and dumbbells, as well as specialized equipment for functional training, powerlifting and more.</p>
-              <a href="#join-form"><button class="gym-button" style="margin-left: 7.5rem; margin-bottom: 1rem;">JOIN NOW →</button></a>
+              <img src="kashmir.jpg" alt="Card Image" width="472px" height="300px" >
+              <center><h1 style="color: white; margin-bottom: 10px;">Kashmir</h1></center>
+              <p class="cardtxt" style="color: white; font-size: 18px" align="justify" >Kashmir is an ideal destination to plan a family tour and honeymoon holiday in India.
+                 The picturesque Gulmarg, Srinagar, Pahalgam or Sonmarg, make a holiday with family, or honeymoon
+                  in Kashmir a wonderful experience. Kashmir is even home to the popular Amarnath Cave which calls the ardent
+                  devotees Lord Shiva from across the world.</p>
+              <center><a href="#join-form"><button  class="button">Book Now</button></a></center>  
+            </div>
+          
+          </div>
+
+          <div class="card-container">
+            
+            <div class="card">
+              <img src="rajasthan.jpg" alt="Card Image" width="472px" height="300px" >
+              <center><h1 style="color: white; margin-bottom: 10px;">Rajasthan</h1></center>
+              <p class="cardtxt" style="color: white; font-size: 18px" align="justify" >The land of kings, Rajasthan is a vibrant state that attracts history buffs, 
+                architecture lovers, wildlife enthusiasts and foodies alike. It lies in the north-western part of India and boasts an impressive amalgamation of natural 
+                beauty and manmade structures. From beautiful lakes, vast deserts and rich wildlife to magnificent palaces,
+                 forts and temples, the city has so many things for a wonderful vacation. </p>
+              <center><a href="#join-form"><button  class="button">Book Now</button></a></center>
+
+            </div>
+            
+            <div class="card">
+              <img src="munnar.jpg" alt="Card Image" width="472px" height="300px" >
+              <center><h1 style="color: white; margin-bottom: 10px;">Munnar</h1></center>
+              <p class="cardtxt" style="color: white; font-size: 18px" align="justify" >Nestled in the Western Ghats in the state of Kerala,
+                 Munnar is counted among the most serene and beautiful tourist places in India.
+                 The hill station boasts impeccable natural beauty in the form of rolling hills, scenic valleys, 
+                 virgin forests, waterfalls, streams, national parks, tea and spice plantations and winding walkways.
+                 However, it is the unmissable colonial charm of Munnar that attracts many tourists time and again.</p>
+              <center><a href="#join-form"><button  class="button">Book Now</button></a></center>  
+            </div>
+            
+            <div class="card">
+              <img src="shimla.jpg" alt="Card Image" width="472px" height="300px" >
+              <center><h1 style="color: white; margin-bottom: 10px;">Shimla</h1></center>
+              <p class="cardtxt" style="color: white; font-size: 18px" align="justify" >Located in Himachal Pradesh at a height of 2276 metres above sea level, Shimla has been attracting honeymooners and families for decades. This hill station was the summer capital of British India, and so, the stunning colonial architecture and old-world charm here are unmissable. Shimla mesmerises nature
+                 lovers as well with its snow-covered mountains, rolling valleys, and beautiful lakes.</p>
+              <center><a href="#join-form"><button  class="button">Book Now</button></a></center>  
             </div>
           
           </div>
